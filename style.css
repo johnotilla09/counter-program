@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    background: #f0f2f0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #000c40,
+        #f0f2f0
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #000c40,
+        #f0f2f0
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* height: 90vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    position: relative;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* width: max-content; */
+    position: absolute;
+    border: px solid red;
+    left: 0;
+    top: 0;
+    padding-left: 2.5rem;
+}
+
+.nav img {
+    height: 15%;
+    width: 15%;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: max-content;
+}
+
+.titleContainer {
+    font-family: "Anton", sans-serif;
+    font-style: normal;
+    font-size: 28px;
+}
+
+.titleContainer h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    background: -webkit-linear-gradient(
+        to right,
+        #db36a4,
+        #f7ff00
+    ); /* Gradient for modern browsers */
+    background: linear-gradient(
+        to right,
+        #db36a4,
+        #f7ff00
+    ); /* Gradient fallback */
+    -webkit-background-clip: text; /* Clips the gradient to the text */
+    -webkit-text-fill-color: transparent; /* Makes the text color transparent to show the gradient */
+}
+
+.counterContainer {
+    border-radius: 24px;
+    background-color: #fff;
+    width: max-content;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 0 1.5rem 2.5rem 1.5rem;
+}
+
+#countLabel {
+    display: block;
+    text-align: center;
+    font-size: 15em;
+    font-family: Helvetica;
+}
+
+#btnContainer {
+    text-align: center;
+}
+
+.buttons {
+    font-family: Poppins;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: white;
+    background-color: #7349ed;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: background-color 0.25s;
+}
+
+.buttons:hover {
+    background-color: #8d6cef;
+}
